@@ -1,0 +1,27 @@
+<div class="calculator">
+  <div class="display" id="display">
+    <span id="display-text">{{ expression }}</span>
+  </div>
+  <div class="buttons">
+    <button class="button special" (click)="clearDisplay()">AC</button>
+    <button class="button special" (click)="deleteLast()"><i class="fas fa-backspace"></i></button>
+    <button class="button special" (click)="toggleSign()">+/-</button>
+    <button class="button special" (click)="appendOperator('÷')">÷</button>
+    <button class="button" (click)="appendNumber('7')">7</button>
+    <button class="button" (click)="appendNumber('8')">8</button>
+    <button class="button" (click)="appendNumber('9')">9</button>
+    <button class="button special" (click)="appendOperator('×')">×</button>
+    <button class="button" (click)="appendNumber('4')">4</button>
+    <button class="button" (click)="appendNumber('5')">5</button>
+    <button class="button" (click)="appendNumber('6')">6</button>
+    <button class="button special" (click)="appendOperator('-')">-</button>
+    <button class="button" (click)="appendNumber('1')">1</button>
+    <button class="button" (click)="appendNumber('2')">2</button>
+    <button class="button" (click)="appendNumber('3')">3</button>
+    <button class="button special" (click)="appendOperator('+')">+</button>
+    <button class="button" (click)="appendOperator('%')">%</button>
+    <button class="button" (click)="appendNumber('0')">0</button>
+    <button class="button" (click)="appendNumber('.')">.</button>
+    <button class="button equal" (click)="calculate()">=</button>
+  </div>
+</div>
